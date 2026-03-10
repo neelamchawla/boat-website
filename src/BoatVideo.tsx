@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import boatVideo from "./assets/boat-video.mp4";
 
 const curvedClipPath = "ellipse(130% 100% at 50% 100%)";
 
@@ -66,7 +67,7 @@ function BoatVideo() {
         playsInline
         preload="auto"
       >
-        <source src="src/assets/boat-video.mp4" type="video/mp4" />
+        <source src={boatVideo} type="video/mp4" />
       </video>
     </div>
   );
