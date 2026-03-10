@@ -4,12 +4,12 @@ export default defineConfig({
   theme: {
     extend: {
       animation: {
-        "clip-from-top-animation": "clip 1s ease-in-out 5.5s forwards",
+        "boat-video-intro": "boat-video-fade 700ms ease-out forwards",
       },
       keyframes: {
-        "clip": {
-          "0%": { 'clip-path': "ellipse(100% 100% at 50% 50%)" },
-          "100%": { 'clip-path': "ellipse(160% 160% at 50% 160%)" },
+        "boat-video-fade": {
+          "0%": { opacity: "0" },
+          "100%": { opacity: "1" },
         },
       },
     },
